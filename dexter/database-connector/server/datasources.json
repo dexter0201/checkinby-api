@@ -1,1 +1,12 @@
-{}
+{
+  "accountDS": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "demo",
+    "password": "",
+    "name": "accountDS",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
