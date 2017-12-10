@@ -1,0 +1,12 @@
+{
+  "accountDS": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "demo",
+    "password": "Admin123@",
+    "name": "accountDS",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
