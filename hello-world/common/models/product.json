@@ -1,29 +1,286 @@
 {
-  "name": "product",
-  "plural": "product",
-  "base": "Model",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "name": {
-      "type": "string",
-      "required": true
+    "name": "Product",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "description": {
-      "type": "string"
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "DENY"
-    }
-  ],
-  "methods": {}
+    "properties": {
+        "activeData": {
+            "type": "object"
+        },
+        "allCategories": {
+            "type": [
+                "object"
+            ]
+        },
+        "allCategoryAssignments": {
+            "type": [
+                "object"
+            ]
+        },
+        "allIncomingProductLinks": {
+            "type": [
+                "object"
+            ]
+        },
+        "allProductLinks": {
+            "type": [
+                "object"
+            ]
+        },
+        "assignedToSiteCatalog": {
+            "type": "boolean",
+            "default": false
+        },
+        "attributeModel": {
+            "type": "object"
+        },
+        "availabilityModel": {
+            "type": "object"
+        },
+        "brand": {
+            "type": "string"
+        },
+        "bundle": {
+            "type": "boolean",
+            "default": false
+        },
+        "bundled": {
+            "type": "boolean",
+            "default": false
+        },
+        "bundledProducts": {
+            "type": [
+                "object"
+            ]
+        },
+        "bundles": {
+            "type": [
+                "object"
+            ]
+        },
+        "categories": {
+            "type": [
+                "object"
+            ]
+        },
+        "categorized": {
+            "type": "boolean",
+            "default": false
+        },
+        "categoryAssignments": {
+            "type": [
+                "object"
+            ]
+        },
+        "classificationCategory": {
+            "type": "object"
+        },
+        "EAN": {
+            "type": "string"
+        },
+        "facebookEnabled": {
+            "type": "boolean"
+        },
+        "ID": {
+            "type": "string",
+            "required": true
+        },
+        "incomingProductLinks": {
+            "type": [
+                "object"
+            ]
+        },
+        "longDescription": {
+            "type": "string"
+        },
+        "manufactureName": {
+            "type": "string"
+        },
+        "manufactureSKU": {
+            "type": "string"
+        },
+        "master": {
+            "type": "boolean",
+            "default": false
+        },
+        "minOrderQuantity": {
+            "type": "object"
+        },
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "online": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "onlineCategories": {
+            "type": [
+                "object"
+            ]
+        },
+        "onlineFlag": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "onlineFrom": {
+            "type": "date"
+        },
+        "onlineTo": {
+            "type": "date"
+        },
+        "optionModel": {
+            "type": "object"
+        },
+        "optionProduct": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "orderableRecommendations": {
+            "type": [
+                "object"
+            ]
+        },
+        "pageDescription": {
+            "type": "string"
+        },
+        "pageKeywords": {
+            "type": "string"
+        },
+        "pageMetaTags": {
+            "type": [
+                "string"
+            ]
+        },
+        "pageTitle": {
+            "type": "string"
+        },
+        "pageURL": {
+            "type": "string"
+        },
+        "pinterestEnabled": {
+            "type": "boolean"
+        },
+        "priceModel": {
+            "type": "object"
+        },
+        "primaryCategory": {
+            "type": "object"
+        },
+        "primaryCategoryAssignment": {
+            "type": "object"
+        },
+        "product": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "productLinks": {
+            "type": [
+                "object"
+            ]
+        },
+        "productSet": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "productSetProduct": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        },
+        "productSetProducts": {
+            "type": [
+                "boolean"
+            ]
+        },
+        "productSets": {
+            "type": [
+                "object"
+            ]
+        },
+        "recommendations": {
+            "type": [
+                "object"
+            ]
+        },
+        "searchable": {
+            "type": "boolean",
+            "default": true
+        },
+        "searchableFlag": {
+            "type": "boolean",
+            "default": true
+        },
+        "searchableIfUnavailableFlag": {
+            "type": "boolean"
+        },
+        "searchPlacement": {
+            "type": "number"
+        },
+        "searchRank": {
+            "type": "number"
+        },
+        "shortDescription": {
+            "type": "string"
+        },
+        "siteMapChangeFrequency": {
+            "type": "string"
+        },
+        "siteMapPriority": {
+            "type": "number"
+        },
+        "stepQuantity": {
+            "type": "object"
+        },
+        "storeReceiptName": {
+            "type": "string"
+        },
+        "storeTaxClass": {
+            "type": "string"
+        },
+        "taxClassID": {
+            "type": "string"
+        },
+        "template": {
+            "type": "string"
+        },
+        "unit": {
+            "type": "string"
+        },
+        "UPC": {
+            "type": "string"
+        },
+        "variant": {
+            "type": "boolean",
+            "default": false
+        },
+        "variants": {
+            "type": [
+                "object"
+            ]
+        },
+        "variationGroup": {
+            "type": "boolean",
+            "default": false
+        },
+        "variationGroups": {
+            "type": [
+                "object"
+            ]
+        },
+        "variationModel": {
+            "type": "object"
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
 }
