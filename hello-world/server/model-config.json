@@ -35,14 +35,6 @@
         "dataSource": "db",
         "public": false
     },
-    "product": {
-        "dataSource": "db",
-        "public": true
-    },
-    "variant": {
-        "dataSource": "test-datasource",
-        "public": true
-    },
     "Review": {
         "dataSource": "mongoDs",
         "public": true
@@ -56,7 +48,7 @@
         "public": true
     },
     "Product": {
-        "dataSource": "mongoDs",
+        "dataSource": "checkinby",
         "public": true
     }
 }

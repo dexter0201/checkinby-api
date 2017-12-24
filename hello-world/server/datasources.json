@@ -32,5 +32,15 @@
     "name": "mongoDs",
     "user": "",
     "connector": "mongodb"
+  },
+  "checkinby": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "checkinby",
+    "password": "",
+    "name": "checkinby",
+    "user": "",
+    "connector": "mongodb"
   }
 }

@@ -228,7 +228,7 @@ module.exports = function (Product) {
      * @return {String} ID of the product.
      */
     Product.prototype.getID = function () {
-        return this.ID:
+        return this.ID;
     };
 
     /**
