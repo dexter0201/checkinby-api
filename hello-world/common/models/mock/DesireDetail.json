@@ -1,0 +1,163 @@
+{
+    "ProductVariantDetail":
+    {
+        "WishListID": "fc50ba07-ce05-4c37-b51d-1d4a57f99d3d",
+        "ProductID": 415378,
+        "ProductVariantID": 483899,
+        "Name": "Landscape Print Shirt With Mandarin Collar",
+        "Description": "This mandarin-collar, white cotton shirt is defined by a vivid, hot pink landscape placement print. The exclusive print is inspired by a vintage painting of the English countryside.",
+        "Price": 6060.2300,
+        "FormattedPrice": "$6,060.23 HKD",
+        "RetailerCurrencySymbol": "$",
+        "RetailerCurrencyCode": "HKD",
+        "Images": ["https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/J.W.AndersonHK/Standard/J.W.AndersonHK_278606f5-af9b-47c0-8bbc-cd52bf98cffc.jpg"],
+        "LargeImages": ["https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/J.W.AndersonHK/Standard/J.W.AndersonHK_278606f5-af9b-47c0-8bbc-cd52bf98cffc.jpg"],
+        "RelatedProducts": [
+        {
+            "WishListID": null,
+            "ProductVariantID": 319,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_11_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Navy",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 318,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_11_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Navy",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 317,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_11_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Navy",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 316,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_11_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Navy",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 315,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_11_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Navy",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 309,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_6_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Silver",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 308,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_6_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Silver",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 307,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_6_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Silver",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 306,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_6_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Silver",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        },
+        {
+            "WishListID": null,
+            "ProductVariantID": 305,
+            "Image": "https://cdn.weidesire.com/s3/buydesire/SiteContent/ProductImages/Herringbone/Medium/LSKnitwearDrop8_WomensKnitwear_AzalaPullover_6_Medium_1.jpg?height=400",
+            "ProductName": "Azala Pullover Silver",
+            "RetailerStoreName": "Herringbone AU",
+            "RetailerID": 1,
+            "ProductCategoryID": 202
+        }],
+        "Attributes": [
+        {
+            "ID": 2,
+            "Name": "Size",
+            "ProductCategoryID": 0,
+            "Values": [
+            {
+                "ID": 81,
+                "Name": "48",
+                "IsSelected": true
+            }]
+        },
+        {
+            "ID": 27390,
+            "Name": "Colour",
+            "ProductCategoryID": 0,
+            "Values": [
+            {
+                "ID": 180260,
+                "Name": "Multi",
+                "IsSelected": true
+            }]
+        }],
+        "FullAttributes": [],
+        "RetailerID": 61728,
+        "RetailerName": "J.W. Anderson HK",
+        "Latitude": 22.27771,
+        "Longitude": 114.16544,
+        "RetailerStoreID": 80352,
+        "OfferInfo": null,
+        "IsInMyDesire": false,
+        "UserID": 45754,
+        "UserName": "Chelsea Bright",
+        "InMyShoppingBag": false,
+        "ProductDetailLink": "https://weidesire.com//shop/desire/fc50ba07-ce05-4c37-b51d-1d4a57f99d3d",
+        "ProductDetailShortLink": "http://bit.ly/2hgBHNO",
+        "FBCaption": "",
+        "TTDescription": "https://weidesire.com//shop/desire/fc50ba07-ce05-4c37-b51d-1d4a57f99d3d",
+        "BuyOnMerchantSite": true,
+        "RetailerItemLink": "https://j-w-anderson.com/mens/landscape-print-shirt-w-mandarin-collar.html",
+        "ViewPermissionID": 2,
+        "Comment": null,
+        "DesireListID": null,
+        "DesireListName": "",
+        "NumberOfUsersDesired": 1,
+        "DesiresCount": 0,
+        "IsRetailerFollowed": false,
+        "WhatsAppMessage": " https://weidesire.com//w/483899-80352-61893",
+        "UserAddedProductID": 0,
+        "IsCarsAndVehicles": false
+    },
+    "TargetDevice": "Tablet",
+    "Success": true,
+    "AppVersionIsNoLongerSupported": false,
+    "AppVersionIsOutOfDate": false,
+    "Message": null,
+    "DataVersion": 1
+}

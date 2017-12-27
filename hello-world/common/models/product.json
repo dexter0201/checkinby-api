@@ -5,282 +5,423 @@
     "options": {
         "validateUpsert": true
     },
-    "properties": {
-        "activeData": {
+    "properties":
+    {
+        "activeData":
+        {
             "type": "object"
         },
-        "allCategories": {
+        "allCategories":
+        {
             "type": [
                 "object"
             ]
         },
-        "allCategoryAssignments": {
+        "allCategoryAssignments":
+        {
             "type": [
                 "object"
             ]
         },
-        "allIncomingProductLinks": {
+        "allIncomingProductLinks":
+        {
             "type": [
                 "object"
             ]
         },
-        "allProductLinks": {
+        "allProductLinks":
+        {
             "type": [
                 "object"
             ]
         },
-        "assignedToSiteCatalog": {
+        "assignedToSiteCatalog":
+        {
             "type": "boolean",
             "default": false
         },
-        "attributeModel": {
+        "attributeModel":
+        {
             "type": "object"
         },
-        "availabilityModel": {
+        "availabilityModel":
+        {
             "type": "object"
         },
-        "brand": {
+        "brand":
+        {
             "type": "string"
         },
-        "bundle": {
+        "bundle":
+        {
             "type": "boolean",
             "default": false
         },
-        "bundled": {
+        "bundled":
+        {
             "type": "boolean",
             "default": false
         },
-        "bundledProducts": {
+        "bundledProducts":
+        {
             "type": [
                 "object"
             ]
         },
-        "bundles": {
+        "bundles":
+        {
             "type": [
                 "object"
             ]
         },
-        "categories": {
+        "categories":
+        {
             "type": [
                 "object"
             ]
         },
-        "categorized": {
+        "categorized":
+        {
             "type": "boolean",
             "default": false
         },
-        "categoryAssignments": {
+        "categoryAssignments":
+        {
             "type": [
                 "object"
             ]
         },
-        "classificationCategory": {
+        "classificationCategory":
+        {
             "type": "object"
         },
-        "EAN": {
+        "EAN":
+        {
             "type": "string"
         },
-        "facebookEnabled": {
+        "facebookEnabled":
+        {
             "type": "boolean"
         },
-        "ID": {
+        "ID":
+        {
             "type": "string",
             "required": true
         },
-        "incomingProductLinks": {
+        "incomingProductLinks":
+        {
             "type": [
                 "object"
             ]
         },
-        "longDescription": {
+        "longDescription":
+        {
             "type": "string"
         },
-        "manufactureName": {
+        "manufactureName":
+        {
             "type": "string"
         },
-        "manufactureSKU": {
+        "manufactureSKU":
+        {
             "type": "string"
         },
-        "master": {
+        "master":
+        {
             "type": "boolean",
             "default": false
         },
-        "minOrderQuantity": {
+        "minOrderQuantity":
+        {
             "type": "object"
         },
-        "name": {
+        "name":
+        {
             "type": "string",
             "required": true
         },
-        "online": {
+        "online":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "onlineCategories": {
+        "onlineCategories":
+        {
             "type": [
                 "object"
             ]
         },
-        "onlineFlag": {
+        "onlineFlag":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "onlineFrom": {
+        "onlineFrom":
+        {
             "type": "date"
         },
-        "onlineTo": {
+        "onlineTo":
+        {
             "type": "date"
         },
-        "optionModel": {
+        "optionModel":
+        {
             "type": "object"
         },
-        "optionProduct": {
+        "optionProduct":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "orderableRecommendations": {
+        "orderableRecommendations":
+        {
             "type": [
                 "object"
             ]
         },
-        "pageDescription": {
+        "pageDescription":
+        {
             "type": "string"
         },
-        "pageKeywords": {
+        "pageKeywords":
+        {
             "type": "string"
         },
-        "pageMetaTags": {
+        "pageMetaTags":
+        {
             "type": [
                 "string"
             ]
         },
-        "pageTitle": {
+        "pageTitle":
+        {
             "type": "string"
         },
-        "pageURL": {
+        "pageURL":
+        {
             "type": "string"
         },
-        "pinterestEnabled": {
+        "pinterestEnabled":
+        {
             "type": "boolean"
         },
-        "priceModel": {
+        "priceModel":
+        {
             "type": "object"
         },
-        "primaryCategory": {
+        "primaryCategory":
+        {
             "type": "object"
         },
-        "primaryCategoryAssignment": {
+        "primaryCategoryAssignment":
+        {
             "type": "object"
         },
-        "product": {
+        "product":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "productLinks": {
+        "productLinks":
+        {
             "type": [
                 "object"
             ]
         },
-        "productSet": {
+        "productSet":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "productSetProduct": {
+        "productSetProduct":
+        {
             "type": "boolean",
             "required": true,
             "default": false
         },
-        "productSetProducts": {
+        "productSetProducts":
+        {
             "type": [
                 "boolean"
             ]
         },
-        "productSets": {
+        "productSets":
+        {
             "type": [
                 "object"
             ]
         },
-        "recommendations": {
+        "recommendations":
+        {
             "type": [
                 "object"
             ]
         },
-        "searchable": {
+        "searchable":
+        {
             "type": "boolean",
             "default": true
         },
-        "searchableFlag": {
+        "searchableFlag":
+        {
             "type": "boolean",
             "default": true
         },
-        "searchableIfUnavailableFlag": {
+        "searchableIfUnavailableFlag":
+        {
             "type": "boolean"
         },
-        "searchPlacement": {
+        "searchPlacement":
+        {
             "type": "number"
         },
-        "searchRank": {
+        "searchRank":
+        {
             "type": "number"
         },
-        "shortDescription": {
+        "shortDescription":
+        {
             "type": "string"
         },
-        "siteMapChangeFrequency": {
+        "siteMapChangeFrequency":
+        {
             "type": "string"
         },
-        "siteMapPriority": {
+        "siteMapPriority":
+        {
             "type": "number"
         },
-        "stepQuantity": {
+        "stepQuantity":
+        {
             "type": "object"
         },
-        "storeReceiptName": {
+        "storeReceiptName":
+        {
             "type": "string"
         },
-        "storeTaxClass": {
+        "storeTaxClass":
+        {
             "type": "string"
         },
-        "taxClassID": {
+        "taxClassID":
+        {
             "type": "string"
         },
-        "template": {
+        "template":
+        {
             "type": "string"
         },
-        "unit": {
+        "unit":
+        {
             "type": "string"
         },
-        "UPC": {
+        "UPC":
+        {
             "type": "string"
         },
-        "variant": {
+        "variant":
+        {
             "type": "boolean",
             "default": false
         },
-        "variants": {
+        "variants":
+        {
             "type": [
                 "object"
             ]
         },
-        "variationGroup": {
+        "variationGroup":
+        {
             "type": "boolean",
             "default": false
         },
-        "variationGroups": {
+        "variationGroups":
+        {
             "type": [
                 "object"
             ]
         },
-        "variationModel": {
+        "variationModel":
+        {
             "type": "object"
         }
     },
     "validations": [],
     "relations": {},
     "acls": [],
-    "methods": {}
+    "methods": {
+        "prototype.testMethod": {
+            "accepts": [],
+            "returns": [],
+            "description": "This is a test method",
+            "http": [{
+                "verb": "get",
+                "path": "/test-method"
+            }]
+        },
+        "prototype.availability": {
+            "accepts": [{
+                "arg": "inventory_ids",
+                "type": "String",
+                "description": [
+                    "The optional inventory list ids, which the availability ",
+                    "should be shown. MaxItems = 5"
+                ]
+            }, {
+                "arg": "locale",
+                "type": "String",
+                "description": "The locale context."
+            }],
+            "returns": [{
+                "arg": "results",
+                "type": "Object",
+                "root": true
+            }],
+            "description": [
+                "Access product availability information of products ",
+                "that are online and assigned to the site catalog."
+            ],
+            "http": {
+                "verb": "get"
+            }
+        },
+        "getDesireDetail": {
+            "accepts": [],
+            "returns": [{
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http": {
+                "verb": "get"
+            }
+        },
+        "getPriceFilter": {
+            "accepts": [],
+            "returns": [{
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http": {
+                "verb": "get"
+            }
+        },
+        "getFilterProductCatalogues": {
+            "accepts": [],
+            "returns": [{
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http": {
+                "verb": "get"
+            }
+        }
+    }
 }

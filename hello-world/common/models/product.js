@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 module.exports = function (Product) {
     /**
@@ -955,5 +955,61 @@ module.exports = function (Product) {
      */
     Product.prototype.setSearchRank = function (rank) {
         // @TODO:
+    };
+
+    // ======================== CUSTOMIZATION =================================
+
+    /**
+     * This is a test method
+     * @param {Function(Error)} callback
+     */
+    Product.prototype.testMethod = function (callback) {
+        // TODO
+        callback('testmethod');
+    };
+
+    Product.testStaticGreet2 = function (msg, callback) {
+        callback(null, 'Hello ' + msg);
+    };
+
+    Product.remoteMethod('testStaticGreet2', {
+        http: {
+            path: '/sayhi',
+            verb: 'get'
+        },
+        accepts: {
+            arg: 'msg',
+            type: 'string'
+        },
+        returns: {
+            arg: 'results',
+            type: 'string'
+        }
+    });
+
+    /**
+     * This is a test method
+     * @param {Function(Error)} callback
+     */
+    Product.prototype.availability = function (callback) {
+        // TODO
+        callback(null, this.getAvailabilityModel());
+    };
+
+    //================== Original methods ====================================
+    function getMock(currentMethod) {
+        return require('./mock/' + currentMethod.callee.name.slice(3) + '.json');
+    }
+
+    Product.getDesireDetail = function getDesireDetail(callback) {
+        callback(null, getMock(arguments));
+    };
+
+    Product.getPriceFilter = function getPriceFilter() {
+        callback(null, getMock(arguments));
+    };
+
+    Product.getFilterProductCatalogues = function getFilterProductCatalogues() {
+        callback(null, getMock(arguments));
     };
 };
