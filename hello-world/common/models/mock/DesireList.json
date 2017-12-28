@@ -1,0 +1,25 @@
+{
+    "ListCustomDesireInfo": [
+    {
+        "DesireListID": 152136,
+        "DesireName": "Jewelry",
+        "DesireListImage": "https://cdn.weidesire.com/s3/buydesire/SiteContent/SocialEventImages/catalogue-15269065.jpg",
+        "ViewPermissionID": 2,
+        "ListImageUrl": null,
+        "IsFollowing": false
+    },
+    {
+        "DesireListID": 152137,
+        "DesireName": "Fashion",
+        "DesireListImage": "https://cdn.weidesire.com/s3/buydesire/SiteContent/SocialEventImages/catalogue-15269065.jpg",
+        "ViewPermissionID": 1,
+        "ListImageUrl": null,
+        "IsFollowing": false
+    }],
+    "TargetDevice": "Tablet",
+    "Success": true,
+    "AppVersionIsNoLongerSupported": false,
+    "AppVersionIsOutOfDate": false,
+    "Message": null,
+    "DataVersion": -1
+}

@@ -1005,11 +1005,23 @@ module.exports = function (Product) {
         callback(null, getMock(arguments));
     };
 
-    Product.getPriceFilter = function getPriceFilter() {
+    Product.getPriceFilter = function getPriceFilter(callback) {
         callback(null, getMock(arguments));
     };
 
-    Product.getFilterProductCatalogues = function getFilterProductCatalogues() {
+    Product.getFilterProductCatalogues = function getFilterProductCatalogues(callback) {
+        callback(null, getMock(arguments));
+    };
+
+    Product.getProductComments = function getProductComments(callback) {
+        callback(null, getMock(arguments));
+    };
+
+    Product.getFollowingDesireList = function getFollowingDesireList(callback) {
+        callback(null, getMock(arguments));
+    };
+
+    Product.getDesireList = function getDesireList(callback) {
         callback(null, getMock(arguments));
     };
 };

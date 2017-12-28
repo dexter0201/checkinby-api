@@ -50,5 +50,9 @@
   "Product": {
     "dataSource": "checkinby",
     "public": true
+  },
+  "Desire": {
+    "dataSource": "checkinby",
+    "public": true
   }
 }

@@ -2,7 +2,8 @@
     "name": "Product",
     "base": "PersistedModel",
     "idInjection": true,
-    "options": {
+    "options":
+    {
         "validateUpsert": true
     },
     "properties":
@@ -352,32 +353,40 @@
         }
     },
     "validations": [],
-    "relations": {},
+    "relations":
+    {},
     "acls": [],
-    "methods": {
-        "prototype.testMethod": {
+    "methods":
+    {
+        "prototype.testMethod":
+        {
             "accepts": [],
             "returns": [],
             "description": "This is a test method",
-            "http": [{
+            "http": [
+            {
                 "verb": "get",
                 "path": "/test-method"
             }]
         },
-        "prototype.availability": {
-            "accepts": [{
+        "prototype.availability":
+        {
+            "accepts": [
+            {
                 "arg": "inventory_ids",
                 "type": "String",
                 "description": [
                     "The optional inventory list ids, which the availability ",
                     "should be shown. MaxItems = 5"
                 ]
-            }, {
+            },
+            {
                 "arg": "locale",
                 "type": "String",
                 "description": "The locale context."
             }],
-            "returns": [{
+            "returns": [
+            {
                 "arg": "results",
                 "type": "Object",
                 "root": true
@@ -386,40 +395,92 @@
                 "Access product availability information of products ",
                 "that are online and assigned to the site catalog."
             ],
-            "http": {
+            "http":
+            {
                 "verb": "get"
             }
         },
-        "getDesireDetail": {
+        "getDesireDetail":
+        {
             "accepts": [],
-            "returns": [{
+            "returns": [
+            {
                 "arg": "result",
                 "type": "Object",
                 "root": true
             }],
-            "http": {
+            "http":
+            {
                 "verb": "get"
             }
         },
-        "getPriceFilter": {
+        "getPriceFilter":
+        {
             "accepts": [],
-            "returns": [{
+            "returns": [
+            {
                 "arg": "result",
                 "type": "Object",
                 "root": true
             }],
-            "http": {
+            "http":
+            {
                 "verb": "get"
             }
         },
-        "getFilterProductCatalogues": {
+        "getFilterProductCatalogues":
+        {
             "accepts": [],
-            "returns": [{
+            "returns": [
+            {
                 "arg": "result",
                 "type": "Object",
                 "root": true
             }],
-            "http": {
+            "http":
+            {
+                "verb": "get"
+            }
+        },
+        "getProductComments":
+        {
+            "accepts": [],
+            "returns": [
+            {
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http":
+            {
+                "verb": "get"
+            }
+        },
+        "getFollowingDesireList":
+        {
+            "accepts": [],
+            "returns": [
+            {
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http":
+            {
+                "verb": "get"
+            }
+        },
+        "getDesireList":
+        {
+            "accepts": [],
+            "returns": [
+            {
+                "arg": "result",
+                "type": "Object",
+                "root": true
+            }],
+            "http":
+            {
                 "verb": "get"
             }
         }
