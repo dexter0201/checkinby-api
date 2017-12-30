@@ -1,0 +1,27 @@
+{
+  "name": "ImageGroup",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "images": {
+      "type": [
+        "object"
+      ]
+    },
+    "variation_attributes": {
+      "type": [
+        "object"
+      ]
+    },
+    "view_type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

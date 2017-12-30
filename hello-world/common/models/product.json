@@ -1,488 +1,452 @@
 {
-    "name": "Product",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "options":
-    {
-        "validateUpsert": true
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "activeData": {
+      "type": "object"
     },
-    "properties":
-    {
-        "activeData":
-        {
-            "type": "object"
-        },
-        "allCategories":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "allCategoryAssignments":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "allIncomingProductLinks":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "allProductLinks":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "assignedToSiteCatalog":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "attributeModel":
-        {
-            "type": "object"
-        },
-        "availabilityModel":
-        {
-            "type": "object"
-        },
-        "brand":
-        {
-            "type": "string"
-        },
-        "bundle":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "bundled":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "bundledProducts":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "bundles":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "categories":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "categorized":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "categoryAssignments":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "classificationCategory":
-        {
-            "type": "object"
-        },
-        "EAN":
-        {
-            "type": "string"
-        },
-        "facebookEnabled":
-        {
-            "type": "boolean"
-        },
-        "ID":
-        {
-            "type": "string",
-            "required": true
-        },
-        "incomingProductLinks":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "longDescription":
-        {
-            "type": "string"
-        },
-        "manufactureName":
-        {
-            "type": "string"
-        },
-        "manufactureSKU":
-        {
-            "type": "string"
-        },
-        "master":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "minOrderQuantity":
-        {
-            "type": "object"
-        },
-        "name":
-        {
-            "type": "string",
-            "required": true
-        },
-        "online":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "onlineCategories":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "onlineFlag":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "onlineFrom":
-        {
-            "type": "date"
-        },
-        "onlineTo":
-        {
-            "type": "date"
-        },
-        "optionModel":
-        {
-            "type": "object"
-        },
-        "optionProduct":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "orderableRecommendations":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "pageDescription":
-        {
-            "type": "string"
-        },
-        "pageKeywords":
-        {
-            "type": "string"
-        },
-        "pageMetaTags":
-        {
-            "type": [
-                "string"
-            ]
-        },
-        "pageTitle":
-        {
-            "type": "string"
-        },
-        "pageURL":
-        {
-            "type": "string"
-        },
-        "pinterestEnabled":
-        {
-            "type": "boolean"
-        },
-        "priceModel":
-        {
-            "type": "object"
-        },
-        "primaryCategory":
-        {
-            "type": "object"
-        },
-        "primaryCategoryAssignment":
-        {
-            "type": "object"
-        },
-        "product":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "productLinks":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "productSet":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "productSetProduct":
-        {
-            "type": "boolean",
-            "required": true,
-            "default": false
-        },
-        "productSetProducts":
-        {
-            "type": [
-                "boolean"
-            ]
-        },
-        "productSets":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "recommendations":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "searchable":
-        {
-            "type": "boolean",
-            "default": true
-        },
-        "searchableFlag":
-        {
-            "type": "boolean",
-            "default": true
-        },
-        "searchableIfUnavailableFlag":
-        {
-            "type": "boolean"
-        },
-        "searchPlacement":
-        {
-            "type": "number"
-        },
-        "searchRank":
-        {
-            "type": "number"
-        },
-        "shortDescription":
-        {
-            "type": "string"
-        },
-        "siteMapChangeFrequency":
-        {
-            "type": "string"
-        },
-        "siteMapPriority":
-        {
-            "type": "number"
-        },
-        "stepQuantity":
-        {
-            "type": "object"
-        },
-        "storeReceiptName":
-        {
-            "type": "string"
-        },
-        "storeTaxClass":
-        {
-            "type": "string"
-        },
-        "taxClassID":
-        {
-            "type": "string"
-        },
-        "template":
-        {
-            "type": "string"
-        },
-        "unit":
-        {
-            "type": "string"
-        },
-        "UPC":
-        {
-            "type": "string"
-        },
-        "variant":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "variants":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "variationGroup":
-        {
-            "type": "boolean",
-            "default": false
-        },
-        "variationGroups":
-        {
-            "type": [
-                "object"
-            ]
-        },
-        "variationModel":
-        {
-            "type": "object"
-        }
+    "allCategories": {
+      "type": [
+        "object"
+      ]
     },
-    "validations": [],
-    "relations":
-    {},
-    "acls": [],
-    "methods":
-    {
-        "prototype.testMethod":
-        {
-            "accepts": [],
-            "returns": [],
-            "description": "This is a test method",
-            "http": [
-            {
-                "verb": "get",
-                "path": "/test-method"
-            }]
-        },
-        "prototype.availability":
-        {
-            "accepts": [
-            {
-                "arg": "inventory_ids",
-                "type": "String",
-                "description": [
-                    "The optional inventory list ids, which the availability ",
-                    "should be shown. MaxItems = 5"
-                ]
-            },
-            {
-                "arg": "locale",
-                "type": "String",
-                "description": "The locale context."
-            }],
-            "returns": [
-            {
-                "arg": "results",
-                "type": "Object",
-                "root": true
-            }],
-            "description": [
-                "Access product availability information of products ",
-                "that are online and assigned to the site catalog."
-            ],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getDesireDetail":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getPriceFilter":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getFilterProductCatalogues":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getProductComments":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getFollowingDesireList":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        },
-        "getDesireList":
-        {
-            "accepts": [],
-            "returns": [
-            {
-                "arg": "result",
-                "type": "Object",
-                "root": true
-            }],
-            "http":
-            {
-                "verb": "get"
-            }
-        }
+    "allCategoryAssignments": {
+      "type": [
+        "object"
+      ]
+    },
+    "allIncomingProductLinks": {
+      "type": [
+        "object"
+      ]
+    },
+    "allProductLinks": {
+      "type": [
+        "object"
+      ]
+    },
+    "assignedToSiteCatalog": {
+      "type": "boolean",
+      "default": false
+    },
+    "attributeModel": {
+      "type": "object"
+    },
+    "availabilityModel": {
+      "type": "object"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "bundle": {
+      "type": "boolean",
+      "default": false
+    },
+    "bundled": {
+      "type": "boolean",
+      "default": false
+    },
+    "bundledProducts": {
+      "type": [
+        "object"
+      ]
+    },
+    "bundles": {
+      "type": [
+        "object"
+      ]
+    },
+    "categories": {
+      "type": [
+        "object"
+      ]
+    },
+    "categorized": {
+      "type": "boolean",
+      "default": false
+    },
+    "categoryAssignments": {
+      "type": [
+        "object"
+      ]
+    },
+    "classificationCategory": {
+      "type": "object"
+    },
+    "EAN": {
+      "type": "string"
+    },
+    "facebookEnabled": {
+      "type": "boolean"
+    },
+    "ID": {
+      "type": "string",
+      "required": true
+    },
+    "incomingProductLinks": {
+      "type": [
+        "object"
+      ]
+    },
+    "longDescription": {
+      "type": "string"
+    },
+    "manufactureName": {
+      "type": "string"
+    },
+    "manufactureSKU": {
+      "type": "string"
+    },
+    "master": {
+      "type": "boolean",
+      "default": false
+    },
+    "minOrderQuantity": {
+      "type": "object"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "online": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "onlineCategories": {
+      "type": [
+        "object"
+      ]
+    },
+    "onlineFlag": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "onlineFrom": {
+      "type": "date"
+    },
+    "onlineTo": {
+      "type": "date"
+    },
+    "optionModel": {
+      "type": "object"
+    },
+    "optionProduct": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "orderableRecommendations": {
+      "type": [
+        "object"
+      ]
+    },
+    "pageDescription": {
+      "type": "string"
+    },
+    "pageKeywords": {
+      "type": "string"
+    },
+    "pageMetaTags": {
+      "type": [
+        "string"
+      ]
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "pageURL": {
+      "type": "string"
+    },
+    "pinterestEnabled": {
+      "type": "boolean"
+    },
+    "priceModel": {
+      "type": "object"
+    },
+    "primaryCategory": {
+      "type": "object"
+    },
+    "primaryCategoryAssignment": {
+      "type": "object"
+    },
+    "product": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "productLinks": {
+      "type": [
+        "object"
+      ]
+    },
+    "productSet": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "productSetProduct": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "productSetProducts": {
+      "type": [
+        "boolean"
+      ]
+    },
+    "productSets": {
+      "type": [
+        "object"
+      ]
+    },
+    "recommendations": {
+      "type": [
+        "object"
+      ]
+    },
+    "searchable": {
+      "type": "boolean",
+      "default": true
+    },
+    "searchableFlag": {
+      "type": "boolean",
+      "default": true
+    },
+    "searchableIfUnavailableFlag": {
+      "type": "boolean"
+    },
+    "searchPlacement": {
+      "type": "number"
+    },
+    "searchRank": {
+      "type": "number"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "siteMapChangeFrequency": {
+      "type": "string"
+    },
+    "siteMapPriority": {
+      "type": "number"
+    },
+    "stepQuantity": {
+      "type": "object"
+    },
+    "storeReceiptName": {
+      "type": "string"
+    },
+    "storeTaxClass": {
+      "type": "string"
+    },
+    "taxClassID": {
+      "type": "string"
+    },
+    "template": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "UPC": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "boolean",
+      "default": false
+    },
+    "variants": {
+      "type": [
+        "object"
+      ]
+    },
+    "variationGroup": {
+      "type": "boolean",
+      "default": false
+    },
+    "variationGroups": {
+      "type": [
+        "object"
+      ]
+    },
+    "variationModel": {
+      "type": "object"
     }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "prototype.testMethod": {
+      "accepts": [],
+      "returns": [],
+      "description": "This is a test method",
+      "http": [
+        {
+          "verb": "get",
+          "path": "/test-method"
+        }
+      ]
+    },
+    "prototype.availability": {
+      "accepts": [
+        {
+          "arg": "inventory_ids",
+          "type": "String",
+          "description": [
+            "The optional inventory list ids, which the availability ",
+            "should be shown. MaxItems = 5"
+          ]
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product availability information of products ",
+        "that are online and assigned to the site catalog."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "prototype.images": {
+      "accepts": [
+        {
+          "arg": "all_images",
+          "type": "Boolean",
+          "description": [
+            "If set to true, all images according to the requested",
+            "product, view type and attribute filter are returned.",
+            "If set to false (or omitted), the best matching image for",
+            "the requested product is returned. The attribute value",
+            "filter is ignored in such case."
+          ]
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        },
+        {
+          "arg": "variation_attribute",
+          "type": "String",
+          "description": "The variation values context. maxLength=256"
+        },
+        {
+          "arg": "view_type",
+          "type": "String",
+          "description": "The view types. maxLength=256"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product image information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and variation values."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getDesireDetail": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getPriceFilter": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getFilterProductCatalogues": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getProductComments": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getFollowingDesireList": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getDesireList": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
 }

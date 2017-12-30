@@ -54,5 +54,25 @@
   "Desire": {
     "dataSource": "checkinby",
     "public": true
+  },
+  "ProductWO": {
+    "dataSource": "checkinby",
+    "public": true
+  },
+  "Image": {
+    "dataSource": "db",
+    "public": false
+  },
+  "VariationAttributeValue": {
+    "dataSource": "db",
+    "public": false
+  },
+  "VariationAttribute": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ImageGroup": {
+    "dataSource": "db",
+    "public": false
   }
 }

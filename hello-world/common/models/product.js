@@ -1,6 +1,7 @@
 // 'use strict';
 
 module.exports = function (Product) {
+    var app = require('../../server/server');
     /**
      * Product Model methods
      */
@@ -991,8 +992,11 @@ module.exports = function (Product) {
      * This is a test method
      * @param {Function(Error)} callback
      */
-    Product.prototype.availability = function (callback) {
-        // TODO
+    Product.prototype.availability = function (inventory_ids, locale, callback) {
+        callback(null, this.getAvailabilityModel());
+    };
+
+    Product.prototype.images = function (all_images, locale, variation_attribute, view_type, callback) {
         callback(null, this.getAvailabilityModel());
     };
 
