@@ -997,7 +997,18 @@ module.exports = function (Product) {
     };
 
     Product.prototype.images = function (all_images, locale, variation_attribute, view_type, callback) {
-        callback(null, this.getAvailabilityModel());
+        var ImageGroup = app.models.ImageGroup,
+            imageGroup = new ImageGroup();
+
+        imageGroup.view_type = 'hi-res';
+        imageGroup.images = [];
+        imageGroup.variation_attributes = [{
+            dexter: 'Nguyen Van Lich'
+        }];
+
+        console.log(this);
+
+        callback(null, imageGroup);
     };
 
     //================== Original methods ====================================
