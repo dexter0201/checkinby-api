@@ -49,7 +49,7 @@
   },
   "Product": {
     "dataSource": "checkinby",
-    "public": true
+    "public": false
   },
   "Desire": {
     "dataSource": "checkinby",
@@ -74,5 +74,9 @@
   "ImageGroup": {
     "dataSource": "db",
     "public": false
+  },
+  "TestModel": {
+    "dataSource": "db",
+    "public": true
   }
 }

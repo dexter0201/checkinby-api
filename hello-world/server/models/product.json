@@ -1,6 +1,7 @@
 {
   "name": "Product",
   "base": "PersistedModel",
+  "plural": "pproducts",
   "idInjection": true,
   "options": {
     "validateUpsert": true
