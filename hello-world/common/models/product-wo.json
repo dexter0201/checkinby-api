@@ -1,7 +1,7 @@
 {
   "name": "ProductWO",
-  "base": "PersistedModel",
   "plural": "products",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -139,6 +139,51 @@
   "relations": {},
   "acls": [],
   "methods": {
+    "prototype.images": {
+      "accepts": [
+        {
+          "arg": "all_images",
+          "type": "Boolean",
+          "description": [
+            "If set to true, all images according to the requested",
+            "product, view type and attribute filter are returned.",
+            "If set to false (or omitted), the best matching image for",
+            "the requested product is returned. The attribute value",
+            "filter is ignored in such case."
+          ]
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        },
+        {
+          "arg": "variation_attribute",
+          "type": "String",
+          "description": "The variation values context. maxLength=256"
+        },
+        {
+          "arg": "view_type",
+          "type": "String",
+          "description": "The view types. maxLength=256"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product image information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and variation values."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
     "getProductWODetail": {
       "accepts": [],
       "returns": [
@@ -147,6 +192,46 @@
           "type": "Object",
           "root": true
         }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "prototype.links": {
+      "accepts": [
+        {
+          "arg": "type",
+          "type": "Boolean",
+          "description": [
+            "If set to true, all images according to the requested",
+            "product, view type and attribute filter are returned.",
+            "If set to false (or omitted), the best matching image for",
+            "the requested product is returned. The attribute value",
+            "filter is ignored in such case."
+          ]
+        },
+        {
+          "arg": "direction",
+          "type": "String",
+          "description": "The variation values context. maxLength=256"
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product link information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and link direction."
       ],
       "http": {
         "verb": "get"

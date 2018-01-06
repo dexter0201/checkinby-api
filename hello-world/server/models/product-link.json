@@ -1,0 +1,29 @@
+{
+  "name": "ProductLink",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "source_product_id": {
+      "type": "string"
+    },
+    "source_product_link": {
+      "type": "string"
+    },
+    "target_product_id": {
+      "type": "string"
+    },
+    "target_product_link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
