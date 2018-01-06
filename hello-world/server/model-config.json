@@ -82,5 +82,9 @@
   "ProductLink": {
     "dataSource": "checkinby",
     "public": false
+  },
+  "Store": {
+    "dataSource": "checkinby",
+    "public": false
   }
 }
