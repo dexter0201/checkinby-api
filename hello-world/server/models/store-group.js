@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (Storegroup) {
+module.exports = function (StoreGroup) {
     /**
     * @documentation: Returns the ID of the store group.
     *

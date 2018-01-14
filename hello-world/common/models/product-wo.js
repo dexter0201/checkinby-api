@@ -3,6 +3,11 @@
 module.exports = function (ProductWO) {
     var app = require('../../server/server');
 
+    // ProductWO.beforeRemote('findById', function( ctx, next) {
+    //     console.log('abc');
+    //     // next();
+    // });
+
     ProductWO.getProductWODetail = function (callback) {
         callback(null, {
             dexter: 'Nguyen Van Lich'

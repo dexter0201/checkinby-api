@@ -49,14 +49,14 @@
   },
   "Product": {
     "dataSource": "checkinby",
-    "public": false
+    "public": true
   },
   "Desire": {
     "dataSource": "checkinby",
     "public": true
   },
   "ProductWO": {
-    "dataSource": "checkinby",
+    "dataSource": "checknby-document",
     "public": true
   },
   "Image": {
