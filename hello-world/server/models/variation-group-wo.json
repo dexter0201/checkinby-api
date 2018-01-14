@@ -1,0 +1,30 @@
+{
+  "name": "VariationGroupWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link": {
+      "type": "string"
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "number"
+    },
+    "product_id": {
+      "type": "string",
+      "required": true
+    },
+    "variation_values": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

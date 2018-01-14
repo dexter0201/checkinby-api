@@ -1,0 +1,32 @@
+{
+  "name": "VariationAttributeValueWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object"
+    },
+    "image_swatch": {
+      "type": "object"
+    },
+    "name": {
+      "type": "string"
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

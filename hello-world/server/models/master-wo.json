@@ -1,0 +1,30 @@
+{
+  "name": "MasterWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link": {
+      "type": "string"
+    },
+    "master_id": {
+      "type": "string",
+      "required": true
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "number"
+    },
+    "price_max": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

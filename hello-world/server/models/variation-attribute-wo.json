@@ -1,23 +1,22 @@
 {
-  "name": "ImageGroupWO",
-  "base": "Model",
+  "name": "VariationAttributeWO",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "images": {
-      "type": [
-        "object"
-      ]
+    "id": {
+      "type": "string",
+      "required": true
     },
-    "variation_attributes": {
-      "type": [
-        "object"
-      ]
-    },
-    "view_type": {
+    "name": {
       "type": "string"
+    },
+    "values": {
+      "type": [
+        "object"
+      ]
     }
   },
   "validations": [],

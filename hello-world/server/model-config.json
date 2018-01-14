@@ -71,7 +71,7 @@
     "dataSource": "db",
     "public": false
   },
-  "ImageGroup": {
+  "ImageGroupWO": {
     "dataSource": "db",
     "public": false
   },
@@ -89,6 +89,58 @@
   },
   "StoreGroup": {
     "dataSource": "checkinby",
+    "public": false
+  },
+  "BundledProductWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "InventoryWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "MasterWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "OptionWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "OptionValueWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductPromotionWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "RecommendationWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "RecommendationTypeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductTypeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariantWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationAttributeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationAttributeValueWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationGroupWO": {
+    "dataSource": "checknby-document",
     "public": false
   }
 }
