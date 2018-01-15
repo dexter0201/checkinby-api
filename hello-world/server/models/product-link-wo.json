@@ -1,16 +1,11 @@
 {
-  "name": "TestModel",
-  "plural": "products2",
+  "name": "ProductLinkWO",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "string",
-      "required": true
-    },
     "source_product_id": {
       "type": "string"
     },

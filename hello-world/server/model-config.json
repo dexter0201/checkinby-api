@@ -142,5 +142,9 @@
   "VariationGroupWO": {
     "dataSource": "checknby-document",
     "public": false
+  },
+  "ProductLinkWO": {
+    "dataSource": "checknby-document",
+    "public": false
   }
 }

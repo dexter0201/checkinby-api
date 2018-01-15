@@ -3,10 +3,16 @@
 module.exports = function (ProductWO) {
     var app = require('../../server/server');
 
-    // ProductWO.beforeRemote('findById', function( ctx, next) {
-    //     console.log('abc');
-    //     // next();
-    // });
+    ProductWO.beforeRemote('findById', function(ctx, modelInstace, next) {
+        if (ctx.req.query.expand) {
+            var expand = ctx.req.query.expand.split(',');
+            ctx.args.filter = {
+                include: expand
+            };
+        }
+
+        next();
+    });
 
     ProductWO.getProductWODetail = function (callback) {
         callback(null, {
@@ -36,19 +42,39 @@ module.exports = function (ProductWO) {
     };
 
     ProductWO.prototype.links = function (type, direction, locale, callback) {
-        var ProductLink = app.models.ProductLink,
-            productLink = new ProductLink();
+        // var ProductLink = app.models.ProductLink,
+        //     productLink = new ProductLink();
 
-        productLink.source_product_id = '5a486a0ee833e44be589f62b';
-        productLink.source_product_link = 'http://localhost:3000/api/products/5a486a0ee833e44be589f62b';
-        productLink.target_product_id = this.id;
-        productLink.target_product_link = 'https://<host>/api/products/<this.id>';
-        productLink.type = {
-            up_sell: 0
-        };
+        // productLink.source_product_id = '5a486a0ee833e44be589f62b';
+        // productLink.source_product_link = 'http://localhost:3000/api/products/5a486a0ee833e44be589f62b';
+        // productLink.target_product_id = this.id;
+        // productLink.target_product_link = 'https://<host>/api/products/<this.id>';
+        // productLink.type = {
+        //     up_sell: 0
+        // };
 
-        this.product_links = [productLink];
+        // this.product_links = [productLink];
 
-        callback(null, this);
+        // callback(null, this);
+        var productLink = this.product_links.build({
+            "id": "Dexter222",
+            "source_product_link" : "https://checkinby.com",
+            "target_product_id" : "B1112166",
+            "target_product_link" : "https://dexternguyen.com222",
+            "type" : 0
+        });
+
+        this.product_links.create({
+            "source_product_link" : "https://checkinby111.com",
+            "target_product_id" : "B1112166",
+            "target_product_link" : "https://dexternguyen.com111",
+            "type" : 0
+        },
+          function(err, pl) {
+            console.log('err', err);
+          console.log('done', pl);
+        });
+
+        callback(null, productLink)
     };
 };
