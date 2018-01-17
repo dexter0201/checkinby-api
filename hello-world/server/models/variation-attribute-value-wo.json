@@ -9,12 +9,6 @@
     "description": {
       "type": "string"
     },
-    "image": {
-      "type": "object"
-    },
-    "image_swatch": {
-      "type": "object"
-    },
     "name": {
       "type": "string"
     },
@@ -26,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "image": {
+      "type": "hasOne",
+      "model": "ImageWO",
+      "foreignKey": ""
+    },
+    "image_swatch": {
+      "type": "hasOne",
+      "model": "ImageWO",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

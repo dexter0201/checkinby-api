@@ -1,25 +1,27 @@
 {
-  "name": "VariationAttributeWO",
+  "name": "ImageGroupWO",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "string",
-      "required": true
-    },
-    "name": {
+    "view_type": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "values": {
+    "images": {
       "type": "hasMany",
-      "model": "VariationAttributeValueWO",
+      "model": "ImageWO",
       "foreignKey": ""
+    },
+    "variation_attributes": {
+      "type": "hasMany",
+      "model": "VariationAttributeWO",
+      "foreignKey": "",
+      "through": "VariationAttributeWO"
     }
   },
   "acls": [],

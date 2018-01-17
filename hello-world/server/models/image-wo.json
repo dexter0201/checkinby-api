@@ -1,22 +1,21 @@
 {
-  "name": "ImageGroupWO",
-  "base": "Model",
+  "name": "ImageWO",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "images": {
-      "type": [
-        "object"
-      ]
+    "alt": {
+      "type": "string"
     },
-    "variation_attributes": {
-      "type": [
-        "object"
-      ]
+    "dis_base_link": {
+      "type": "string"
     },
-    "view_type": {
+    "link": {
+      "type": "string"
+    },
+    "title": {
       "type": "string"
     }
   },

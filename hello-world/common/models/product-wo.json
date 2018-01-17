@@ -136,11 +136,6 @@
       "type": "hasMany",
       "model": "ProductLinkWO",
       "foreignKey": "source_product_id"
-    },
-    "product_links2": {
-      "type": "hasMany",
-      "model": "TestModel",
-      "foreignKey": "source_product_id"
     }
   },
   "acls": [],
