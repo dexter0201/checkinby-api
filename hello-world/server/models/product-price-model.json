@@ -1,0 +1,42 @@
+{
+  "name": "ProductPriceModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "basePriceQuantity": {
+      "type": "object"
+    },
+    "maxPrice": {
+      "type": "object"
+    },
+    "minPrice": {
+      "type": "object"
+    },
+    "priceInfos": {
+      "type": [
+        "object"
+      ]
+    },
+    "priceRange": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "priceInfo": {
+      "type": "hasOne",
+      "model": "ProductPriceInfo",
+      "foreignKey": ""
+    },
+    "priceTable": {
+      "type": "hasOne",
+      "model": "ProductPriceTable",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

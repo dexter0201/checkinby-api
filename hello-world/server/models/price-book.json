@@ -1,0 +1,44 @@
+{
+  "name": "PriceBook",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currencyCode": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "online": {
+      "type": "boolean",
+      "required": true
+    },
+    "onlineFlag": {
+      "type": "boolean",
+      "required": true
+    },
+    "onlineFrom": {
+      "type": "date"
+    },
+    "onlineTo": {
+      "type": "date"
+    },
+    "parentPriceBook": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

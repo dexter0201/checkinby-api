@@ -146,5 +146,21 @@
   "ProductLinkWO": {
     "dataSource": "checknby-document",
     "public": false
+  },
+  "ProductPriceModel": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "ProductPriceInfo": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "PriceBook": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "ProductPriceTable": {
+    "dataSource": "checkinby",
+    "public": false
   }
 }
