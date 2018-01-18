@@ -1,6 +1,6 @@
 {
   "name": "Product",
-  "plural": "dxproducts",
+  "plural": "products",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

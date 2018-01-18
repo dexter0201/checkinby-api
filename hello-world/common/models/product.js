@@ -959,6 +959,23 @@ module.exports = function (Product) {
     };
 
     // ======================== CUSTOMIZATION =================================
+    const publicFields = {
+        ID: true,
+        name: true,
+        brand: true,
+        longDescription: true,
+        shortDescription: true,
+        stepQuantiry: true,
+        storeReceiptName: true
+    };
+
+    Product.beforeRemote('findById', function (ctx, modelInstance, next) {
+        ctx.args.filter = {
+            fields: publicFields
+        };
+
+        next();
+    });
 
     /**
      * This is a test method
