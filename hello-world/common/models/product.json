@@ -167,9 +167,6 @@
     "pinterestEnabled": {
       "type": "boolean"
     },
-    "priceModel": {
-      "type": "object"
-    },
     "primaryCategory": {
       "type": "object"
     },
@@ -281,7 +278,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "priceModel": {
+      "type": "hasOne",
+      "model": "ProductPriceModel",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {
     "prototype.testMethod": {
