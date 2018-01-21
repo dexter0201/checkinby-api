@@ -1,6 +1,6 @@
 {
   "name": "Product",
-  "plural": "products",
+  "plural": "dxproducts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -282,7 +282,7 @@
     "priceModel": {
       "type": "hasOne",
       "model": "ProductPriceModel",
-      "foreignKey": ""
+      "foreignKey": "ID"
     }
   },
   "acls": [],

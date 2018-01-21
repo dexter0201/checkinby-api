@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 module.exports = function (Product) {
     var app = require('../../server/server');
@@ -959,19 +959,30 @@ module.exports = function (Product) {
     };
 
     // ======================== CUSTOMIZATION =================================
-    const publicFields = {
-        ID: true,
-        name: true,
-        brand: true,
-        longDescription: true,
-        shortDescription: true,
-        stepQuantiry: true,
-        storeReceiptName: true
-    };
+    // const publicFields = {
+    //     ID: true,
+    //     name: true,
+    //     brand: true,
+    //     longDescription: true,
+    //     shortDescription: true,
+    //     stepQuantiry: true,
+    //     storeReceiptName: true,
+    //     priceModel: true,
+    //     productId: true,
+    //     productPriceModelId: true
+    // };
 
     Product.beforeRemote('findById', function (ctx, modelInstance, next) {
-        ctx.args.filter = {
-            fields: publicFields
+        // ctx.args.filter = {
+        //     fields: publicFields,
+        //     include: ''
+        // };
+
+        if (ctx.req.query.expand) {
+            var expand = ctx.req.query.expand.split(',');
+            ctx.args.filter = {
+                include: expand
+            };
         };
 
         next();
@@ -982,8 +993,20 @@ module.exports = function (Product) {
      * @param {Function(Error)} callback
      */
     Product.prototype.testMethod = function (callback) {
-        // TODO
-        callback('testmethod');
+        this.priceModel.create({
+            basePriceQuantity: 1,
+            maxPrice: 1000000,
+            minPrice: 10000,
+            priceInfos: [],
+            priceRange: false
+        }, function (err, priceModel) {
+            if (err) {
+                console.log(err);
+            }
+
+            console.log(priceModel);
+        });
+        callback(null, 'OK');
     };
 
     Product.testStaticGreet2 = function (msg, callback) {

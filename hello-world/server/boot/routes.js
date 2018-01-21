@@ -1,11 +1,10 @@
 'use strict';
 
+const path = require('path');
+
 module.exports = function (app) {
-    var router = app.loopback.Router();
+    global.rootPath = path.resolve(__dirname + '/../../');
+    var productRouter = require(global.rootPath + '/server/router/product')(app);
 
-    router.get('/ping', (req, res) => {
-        res.send('pongroor');
-    });
-
-    app.use(router);
+    app.use('/api/products/', productRouter);
 };
