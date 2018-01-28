@@ -1,6 +1,6 @@
 {
   "name": "Product",
-  "plural": "products",
+  "plural": "dxproducts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -276,7 +276,7 @@
     "variationModel": {
       "type": "object"
     },
-    "images": {
+    "imageGroups": {
       "type": [
         "object"
       ]
