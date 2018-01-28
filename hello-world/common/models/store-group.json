@@ -13,15 +13,16 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "stores": {
-      "type": [
-        "object"
-      ]
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "stores": {
+      "type": "hasMany",
+      "model": "Store",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

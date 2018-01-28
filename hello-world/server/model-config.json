@@ -85,11 +85,11 @@
   },
   "Store": {
     "dataSource": "checkinby",
-    "public": false
+    "public": true
   },
   "StoreGroup": {
     "dataSource": "checkinby",
-    "public": false
+    "public": true
   },
   "BundledProductWO": {
     "dataSource": "checknby-document",

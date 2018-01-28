@@ -1,6 +1,6 @@
 {
   "name": "Product",
-  "plural": "dxproducts",
+  "plural": "products",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -275,6 +275,11 @@
     },
     "variationModel": {
       "type": "object"
+    },
+    "images": {
+      "type": [
+        "object"
+      ]
     }
   },
   "validations": [],
@@ -282,7 +287,12 @@
     "priceModel": {
       "type": "hasOne",
       "model": "ProductPriceModel",
-      "foreignKey": "ID"
+      "foreignKey": ""
+    },
+    "storeGroup": {
+      "type": "belongsTo",
+      "model": "StoreGroup",
+      "foreignKey": ""
     }
   },
   "acls": [],

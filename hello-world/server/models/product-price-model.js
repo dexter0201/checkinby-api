@@ -35,10 +35,9 @@ module.exports = function (ProductPriceModel) {
     * @return {null}
     */
     ProductPriceModel.prototype.getBasePriceQuantity = function () {
-        //TODO: Implement Me
+        // TODO: Implement Me
 
     };
-
 
     /**
     * @documentation: Calculates and returns the maximum price-book price of all variants (for master products) or set-products (for product sets) for base quantity 1.00. This value can be used to display a range of prices in storefront. If the product represented by this model is not a master product or product set, then this method behaves the same as getPrice(). Only online products are considered. If the "orderable products only" search preference is enabled for the current site, then only orderable products are considered. For master products, only variants with all variation attributes configured are considered.
@@ -104,11 +103,11 @@ module.exports = function (ProductPriceModel) {
     If no price could be found, MONEY.NOT_AVAILABLE is returned.
     *
     * @param  {[object Object]} the product price.
-    * @return {null}
+    * @return {Money}
     */
     ProductPriceModel.prototype.getPrice = function () {
-        //TODO: Implement Me
-
+        console.log('getting price');
+        return this.price;
     };
 
 

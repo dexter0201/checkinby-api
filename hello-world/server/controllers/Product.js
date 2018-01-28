@@ -7,13 +7,20 @@ var ProductController = Class.extend({
     },
 
     getProductDetails: function (id, callback) {
-        this.model.findById(id, (err, result) => {
-            if (err) {
-                callback(err, null);
-            } else {
-                callback(null, result);
+        this.model.findById(
+            id, {
+                include: ['priceModel']
+            },
+            (err, result) => {
+                if (err) {
+                    callback(err, null);
+                } else {
+                    console.log('res ', result.priceModel().getPrice());
+                    // result.priceModel.getPrice();
+                    callback(null, result);
+                }
             }
-        });
+        );
     }
 });
 
