@@ -1,9 +1,12 @@
 'use strict';
 
+const path = require('path');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
+
+global.rootPath = path.resolve(__dirname);
 
 app.start = function() {
     // start the web server

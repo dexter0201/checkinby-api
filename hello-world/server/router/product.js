@@ -1,6 +1,6 @@
 'use strict';
 
-var ProductController = require(global.rootPath + '/server/controllers/Product');
+var ProductController = require(global.rootPath + '/controllers/Product');
 
 module.exports = function (app) {
     var productController = new ProductController(app);

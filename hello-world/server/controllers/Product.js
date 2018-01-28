@@ -1,6 +1,7 @@
 'use strict';
 
-var Class = require(global.rootPath + '/server/scripts/util/Class').Class;
+var Class = require(global.rootPath + '/scripts/util/Class').Class;
+var Utils = require(global.rootPath + '/scripts/util/Utils');
 var ProductController = Class.extend({
     init: function (app) {
         this.model = app.models.Product;
@@ -11,13 +12,13 @@ var ProductController = Class.extend({
             id, {
                 include: ['priceModel']
             },
-            (err, result) => {
+            (err, product) => {
                 if (err) {
                     callback(err, null);
                 } else {
-                    console.log('res ', result.priceModel().getPrice());
-                    // result.priceModel.getPrice();
-                    callback(null, result);
+                    var productwo = product.toDocument();
+
+                    callback(null, productwo);
                 }
             }
         );

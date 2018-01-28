@@ -2,6 +2,7 @@
 
 module.exports = function (Product) {
     var app = require('../../server/server');
+    var Utils = require(global.rootPath + '/scripts/util/Utils');
     /**
      * Product Model methods
      */
@@ -986,6 +987,21 @@ module.exports = function (Product) {
 
         next();
     });
+
+    Product.prototype.toDocument = function () {
+        var ProductWO = require(global.rootPath + '/models/document/ProductWO');
+        var productwo = new ProductWO();
+        for (var prop in productwo) {
+            var dxProp = Utils.snackToCamelCase(prop);
+            if (this[dxProp]) {
+                productwo[prop] = this[dxProp];
+            } else {
+                delete productwo[prop];
+            }
+        }
+
+        return productwo;
+    };
 
     /**
      * This is a test method
