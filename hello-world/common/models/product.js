@@ -474,16 +474,6 @@ module.exports = function (Product) {
     };
 
     /**
-     * Returns the price model, which can be used to retrieve a price for this
-     * product.
-     * @return {ProductPriceModel} the price model, which can be used to
-     * retrieve a price for this product.
-     */
-    Product.prototype.getPriceModel = function () {
-        return this.priceModel;
-    };
-
-    /**
      * Returns the price model based on the specified optionModel. The price
      * model can be used to retrieve a price for this product. Prices are
      * calculated based on the option values selected in the specified option
@@ -494,7 +484,12 @@ module.exports = function (Product) {
      * specified optionModel.
      */
     Product.prototype.getPriceModel = function (optionModel) {
-        return this.priceModel;
+        if (optionModel) {
+            // @TODO: implement me
+            throw new Error('Implement me');
+        }
+
+        return this.priceModel();
     };
 
     /**
@@ -978,24 +973,41 @@ module.exports = function (Product) {
         //     include: ''
         // };
 
-        if (ctx.req.query.expand) {
-            var expand = ctx.req.query.expand.split(',');
-            ctx.args.filter = {
-                include: expand
-            };
-        };
+        // if (ctx.req.query.expand) {
+        //     var expand = ctx.req.query.expand.split(',');
+        //     ctx.args.filter = {
+        //         include: expand
+        //     };
+        // };
 
+        ctx.args.filter = {
+            include: [{
+                storeGroup: 'stores'
+            }, {
+                relation: 'priceModel',
+                scope: {
+                    fields: ['id', 'price']
+                }
+            }]
+        };
         next();
     });
 
     Product.prototype.toDocument = function () {
         var ProductWO = require(global.rootPath + '/models/document/ProductWO');
         var productwo = new ProductWO();
+
+        if (this.getPriceModel() && this.getPriceModel().getPrice()) {
+            productwo.price = this.getPriceModel().getPrice().valueOrNull;
+        }
+
         for (var prop in productwo) {
             var dxProp = Utils.snackToCamelCase(prop);
             if (this[dxProp]) {
                 productwo[prop] = this[dxProp];
-            } else {
+            }
+
+            if (!productwo[prop]) {
                 delete productwo[prop];
             }
         }

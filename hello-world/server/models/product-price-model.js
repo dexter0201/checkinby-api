@@ -93,7 +93,6 @@ module.exports = function (ProductPriceModel) {
 
     };
 
-
     /**
     * @documentation: Returns the price of a product, calculated based on base price quantity 1.00. The price is returned for the currency of the current session.
     *    The price lookup is based on the configuration of price books. It depends on various settings, such as which price books are active, or explicitly set as applicable in the current session.
@@ -103,15 +102,8 @@ module.exports = function (ProductPriceModel) {
     If no price could be found, MONEY.NOT_AVAILABLE is returned.
     *
     * @param  {[object Object]} the product price.
-    * @return {Money}
-    */
-    ProductPriceModel.prototype.getPrice = function () {
-        console.log('getting price');
-        return this.price;
-    };
-
-
-    /**
+    * @return {Money} 
+    * 
     * @documentation: Returns the price of a product, calculated based on the passed order quantity. The price is returned for the currency of the current session.
     *    The price lookup is based on the configuration of price books. It depends on various settings, such as which price books are active, or explicitly set as applicable in the current session.
 
@@ -124,8 +116,12 @@ module.exports = function (ProductPriceModel) {
     * @return {null}
     */
     ProductPriceModel.prototype.getPrice = function (quantity) {
-        //TODO: Implement Me
+        if (quantity) {
+            // @TODO: Implement Me
+            throw new Error('Implement me');
+        }
 
+        return this.price;
     };
 
 

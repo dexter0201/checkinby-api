@@ -10,13 +10,26 @@ var ProductController = Class.extend({
     getProductDetails: function (id, callback) {
         this.model.findById(
             id, {
-                include: ['priceModel']
+                include: [{
+                    storeGroup: 'stores'
+                }, {
+                    relation: 'priceModel',
+                    scope: {
+                        fields: ['id', 'price']
+                    }
+                }]
             },
             (err, product) => {
                 if (err) {
                     callback(err, null);
                 } else {
+                    // console.log(product);
                     var productwo = product.toDocument();
+                    product.storeGroup({
+                        include: 'stores'
+                    }, function (err, storeGroup) {
+                        //console.log(storeGroup);
+                    });
 
                     callback(null, productwo);
                 }

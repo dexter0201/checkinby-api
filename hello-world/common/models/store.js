@@ -222,4 +222,11 @@ module.exports = function (Store) {
         //TODO: Implement Me
 
     };
+
+    // CUSTOMIZATION
+    Store.beforeRemote('findById', function (ctx, modelInstance, next) {
+        console.log('Store beforeRemote findById');
+
+        next();
+    });
 };
