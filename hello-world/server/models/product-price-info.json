@@ -1,0 +1,35 @@
+{
+  "name": "ProductPriceInfo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "onlineFrom": {
+      "type": "date"
+    },
+    "onlineTo": {
+      "type": "date"
+    },
+    "percentage": {
+      "type": "number"
+    },
+    "price": {
+      "type": "object"
+    },
+    "priceInfo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "priceBook": {
+      "type": "hasOne",
+      "model": "PriceBook",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

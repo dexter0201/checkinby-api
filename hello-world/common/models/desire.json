@@ -1,0 +1,48 @@
+{
+  "name": "Desire",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "wistListID": {
+      "type": "string",
+      "required": true
+    },
+    "productVariantID": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "getDesires": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getOtherHaveDesires": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

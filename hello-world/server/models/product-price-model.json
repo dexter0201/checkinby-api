@@ -1,0 +1,64 @@
+{
+  "name": "ProductPriceModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "basePriceQuantity": {
+      "type": "object"
+    },
+    "maxPrice": {
+      "type": "object"
+    },
+    "minPrice": {
+      "type": "object"
+    },
+    "priceInfos": {
+      "type": [
+        "object"
+      ]
+    },
+    "priceRange": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "priceInfo": {
+      "type": "hasOne",
+      "model": "ProductPriceInfo",
+      "foreignKey": ""
+    },
+    "priceTable": {
+      "type": "hasOne",
+      "model": "ProductPriceTable",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {
+    "prototype.getPrice": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product image information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and variation values."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

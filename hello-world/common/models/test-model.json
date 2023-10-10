@@ -1,0 +1,34 @@
+{
+  "name": "TestModel",
+  "plural": "products2",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "source_product_id": {
+      "type": "string"
+    },
+    "source_product_link": {
+      "type": "string"
+    },
+    "target_product_id": {
+      "type": "string"
+    },
+    "target_product_link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

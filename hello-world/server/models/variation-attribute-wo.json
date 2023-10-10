@@ -1,0 +1,27 @@
+{
+  "name": "VariationAttributeWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "values": {
+      "type": "hasMany",
+      "model": "VariationAttributeValueWO",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

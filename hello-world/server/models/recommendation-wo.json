@@ -1,0 +1,38 @@
+{
+  "name": "RecommendationWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "callout_msg": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object"
+    },
+    "long_description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "recommendation_type": {
+      "type": "object"
+    },
+    "recommended_item_id": {
+      "type": "string"
+    },
+    "recommended_item_link": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

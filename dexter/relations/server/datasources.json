@@ -1,0 +1,12 @@
+{
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  },
+  "db": {
+    "name": "db",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  }
+}

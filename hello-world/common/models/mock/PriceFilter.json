@@ -1,0 +1,45 @@
+{
+    "Results": [
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 0.0,
+        "MaxPrice": 20.0,
+        "StrPrice": "$0 - $20"
+    },
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 20.0,
+        "MaxPrice": 50.0,
+        "StrPrice": "$20 - $50"
+    },
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 50.0,
+        "MaxPrice": 100.0,
+        "StrPrice": "$50 - $100"
+    },
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 100.0,
+        "MaxPrice": 200.0,
+        "StrPrice": "$100 - $200"
+    },
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 200.0,
+        "MaxPrice": 300.0,
+        "StrPrice": "$200 - $300"
+    },
+    {
+        "CurrencyPrice": "$",
+        "MinPrice": 300.0,
+        "MaxPrice": 1000000.0,
+        "StrPrice": "$300 - $1,000,000"
+    }],
+    "TargetDevice": "Tablet",
+    "Success": false,
+    "AppVersionIsNoLongerSupported": false,
+    "AppVersionIsOutOfDate": false,
+    "Message": null,
+    "DataVersion": 1
+}

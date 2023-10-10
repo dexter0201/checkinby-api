@@ -1,0 +1,37 @@
+{
+  "name": "VariationAttributeValueWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "image": {
+      "type": "hasOne",
+      "model": "ImageWO",
+      "foreignKey": ""
+    },
+    "image_swatch": {
+      "type": "hasOne",
+      "model": "ImageWO",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "StoreGroup",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ID": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "stores": {
+      "type": "hasMany",
+      "model": "Store",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

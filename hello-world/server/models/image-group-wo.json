@@ -1,0 +1,29 @@
+{
+  "name": "ImageGroupWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "view_type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "images": {
+      "type": "hasMany",
+      "model": "ImageWO",
+      "foreignKey": ""
+    },
+    "variation_attributes": {
+      "type": "hasMany",
+      "model": "VariationAttributeWO",
+      "foreignKey": "",
+      "through": "VariationAttributeWO"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

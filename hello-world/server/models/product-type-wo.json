@@ -1,0 +1,35 @@
+{
+  "name": "ProductTypeWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bundle": {
+      "type": "boolean"
+    },
+    "item": {
+      "type": "boolean"
+    },
+    "master": {
+      "type": "boolean"
+    },
+    "option": {
+      "type": "boolean"
+    },
+    "set": {
+      "type": "boolean"
+    },
+    "variant": {
+      "type": "boolean"
+    },
+    "variation_group": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

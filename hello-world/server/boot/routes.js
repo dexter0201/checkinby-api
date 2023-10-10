@@ -1,11 +1,7 @@
 'use strict';
 
 module.exports = function (app) {
-    var router = app.loopback.Router();
+    var productRouter = require(global.rootPath + '/router/product')(app);
 
-    router.get('/ping', (req, res) => {
-        res.send('pongroor');
-    });
-
-    app.use(router);
+    app.use('/dxproducts/', productRouter);
 };

@@ -1,0 +1,26 @@
+{
+  "name": "ProductPromotionWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "callout_msg": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "promotion_id": {
+      "type": "string"
+    },
+    "promotion_price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

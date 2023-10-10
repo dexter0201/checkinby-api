@@ -1,0 +1,53 @@
+{
+    "name": "Customer",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "age": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "orders": {
+            "type": "hasMany",
+            "model": "Order",
+            "foreignKey": ""
+        },
+        "address": {
+            "type": "embedsOne",
+            "model": "Address",
+            "property": "billingAdress",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        },
+        "emails": {
+            "type": "embedsMany",
+            "model": "EmailAddress",
+            "property": "emailList",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        },
+        "accounts": {
+            "type": "referencesMany",
+            "model": "Account",
+            "foreignKey": "accountIds",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

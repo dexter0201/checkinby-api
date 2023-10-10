@@ -23,6 +23,16 @@
     "user": "root",
     "connector": "mysql"
   },
+  "checknby-document": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "checknby-document",
+    "password": "",
+    "name": "checknby-document",
+    "user": "",
+    "connector": "mongodb"
+  },
   "mongoDs": {
     "host": "localhost",
     "port": 27017,
@@ -30,6 +40,16 @@
     "database": "get_started",
     "password": "",
     "name": "mongoDs",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "checkinby": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "checkinby",
+    "password": "",
+    "name": "checkinby",
     "user": "",
     "connector": "mongodb"
   }

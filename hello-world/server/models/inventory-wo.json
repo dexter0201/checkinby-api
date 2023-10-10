@@ -1,0 +1,39 @@
+{
+  "name": "InventoryWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ats": {
+      "type": "number"
+    },
+    "backorderable": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "in_stock_date": {
+      "type": "date"
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "preorderable": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "stock_level": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

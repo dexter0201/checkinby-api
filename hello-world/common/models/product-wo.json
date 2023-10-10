@@ -1,0 +1,242 @@
+{
+  "name": "ProductWO",
+  "plural": "productswo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "brand": {
+      "type": "string"
+    },
+    "bundled_products": {
+      "type": [
+        "object"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "image_groups": {
+      "type": [
+        "object"
+      ]
+    },
+    "inventories": {
+      "type": [
+        "object"
+      ]
+    },
+    "inventory": {
+      "type": "object"
+    },
+    "long_description": {
+      "type": "string"
+    },
+    "manufacturer_name": {
+      "type": "string"
+    },
+    "nanufacturer_sku": {
+      "type": "string"
+    },
+    "master": {
+      "type": "object"
+    },
+    "min_order_quantity": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "options": {
+      "type": [
+        "object"
+      ]
+    },
+    "page_description": {
+      "type": "string"
+    },
+    "page_keywords": {
+      "type": "string"
+    },
+    "page_title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "price_max": {
+      "type": "number"
+    },
+    "prices": {
+      "type": "any"
+    },
+    "primary_category_id": {
+      "type": "string"
+    },
+    "product_promotions": {
+      "type": [
+        "object"
+      ]
+    },
+    "recommendations": {
+      "type": [
+        "object"
+      ]
+    },
+    "set_products": {
+      "type": [
+        "object"
+      ]
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "step_quantity": {
+      "type": "number"
+    },
+    "type": {
+      "type": "object"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "upc": {
+      "type": "string"
+    },
+    "variants": {
+      "type": [
+        "object"
+      ]
+    },
+    "variation_attributes": {
+      "type": [
+        "object"
+      ]
+    },
+    "variation_groups": {
+      "type": [
+        "boolean"
+      ]
+    },
+    "variation_values": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "product_links": {
+      "type": "hasMany",
+      "model": "ProductLinkWO",
+      "foreignKey": "source_product_id"
+    }
+  },
+  "acls": [],
+  "methods": {
+    "prototype.images": {
+      "accepts": [
+        {
+          "arg": "all_images",
+          "type": "Boolean",
+          "description": [
+            "If set to true, all images according to the requested",
+            "product, view type and attribute filter are returned.",
+            "If set to false (or omitted), the best matching image for",
+            "the requested product is returned. The attribute value",
+            "filter is ignored in such case."
+          ]
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        },
+        {
+          "arg": "variation_attribute",
+          "type": "String",
+          "description": "The variation values context. maxLength=256"
+        },
+        {
+          "arg": "view_type",
+          "type": "String",
+          "description": "The view types. maxLength=256"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product image information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and variation values."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getProductWODetail": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "http": {
+        "verb": "get"
+      }
+    },
+    "prototype.links": {
+      "accepts": [
+        {
+          "arg": "type",
+          "type": "Boolean",
+          "description": [
+            "If set to true, all images according to the requested",
+            "product, view type and attribute filter are returned.",
+            "If set to false (or omitted), the best matching image for",
+            "the requested product is returned. The attribute value",
+            "filter is ignored in such case."
+          ]
+        },
+        {
+          "arg": "direction",
+          "type": "String",
+          "description": "The variation values context. maxLength=256"
+        },
+        {
+          "arg": "locale",
+          "type": "String",
+          "description": "The locale context."
+        }
+      ],
+      "returns": [
+        {
+          "arg": "results",
+          "type": "Object",
+          "root": true
+        }
+      ],
+      "description": [
+        "Access product link information of products that are online",
+        "and assigned to site catalog. Filter the result by view type",
+        "and link direction."
+      ],
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

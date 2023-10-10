@@ -1,0 +1,17 @@
+{
+    "Comments": [
+    {
+        "ProductCommentID": "3d50fee2-b222-4cb3-ada8-4deeb6e98501",
+        "UserID": 61893,
+        "ProfileName": "Dexter Morgan",
+        "ProfileImage": "https://cdn.weidesire.com/s3/buydesire/SiteContent/UserProfileImages/User-Male.jpg",
+        "Comment": "How can I buy this one?",
+        "StrCreateOn": "14 minute"
+    }],
+    "TargetDevice": "Tablet",
+    "Success": true,
+    "AppVersionIsNoLongerSupported": false,
+    "AppVersionIsOutOfDate": false,
+    "Message": null,
+    "DataVersion": 1
+}

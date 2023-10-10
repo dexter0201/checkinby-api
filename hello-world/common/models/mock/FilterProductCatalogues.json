@@ -1,0 +1,181 @@
+{
+    "Results": [
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 0,
+            "Name": "ALL",
+            "CatalogueImageUrl": null
+        },
+        "ChildProductCatalogues": null
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 18,
+            "Name": "Bars & Wine",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Dining_and_Bars.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 11,
+            "Name": "Travel",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Travel.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 20,
+            "Name": "Local Experiences",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_LocalExperiences.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 2,
+            "Name": "Apparel & Accessories",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Apparel_and_Accessories.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 10,
+            "Name": "Beauty",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Beauty.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 7,
+            "Name": "Home",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Home.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 8,
+            "Name": "Pantry & Cellar",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Pantry_and_Celler.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 6,
+            "Name": "Gadgets",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Gadgets.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 3,
+            "Name": "Art",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Art.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 15,
+            "Name": "Food",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Food.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 12,
+            "Name": "Media",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Media.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 13,
+            "Name": "Outdoors & Active",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Outdoor_and_Active.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 9,
+            "Name": "DIY & Crafts",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_DIY_and_Crafts.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 5,
+            "Name": "Workspace",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Workspace.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 14,
+            "Name": "Cars & Vehicles",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Cars_and_Vehicles.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 16,
+            "Name": "Vintage",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Vintage.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 4,
+            "Name": "Kids",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Kids.png"
+        },
+        "ChildProductCatalogues": []
+    },
+    {
+        "MainProductCatalogue":
+        {
+            "ProductCatalogueID": 17,
+            "Name": "Others",
+            "CatalogueImageUrl": "https://cdn.weidesire.com/s3/buydesire/SiteContent/StandardCategoryHeroImages/icon_Others.png"
+        },
+        "ChildProductCatalogues": []
+    }],
+    "ResultsDefault": [],
+    "TargetDevice": "Tablet",
+    "Success": true,
+    "AppVersionIsNoLongerSupported": false,
+    "AppVersionIsOutOfDate": false,
+    "Message": null,
+    "DataVersion": 1
+}

@@ -1,0 +1,32 @@
+{
+  "name": "VariationAttributeValue",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object"
+    },
+    "image_swatch": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

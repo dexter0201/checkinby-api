@@ -1,0 +1,30 @@
+{
+  "name": "VariantWO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "orderable": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "number"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "variation_values": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

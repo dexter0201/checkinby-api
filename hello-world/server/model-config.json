@@ -35,14 +35,6 @@
     "dataSource": "db",
     "public": false
   },
-  "product": {
-    "dataSource": "db",
-    "public": true
-  },
-  "variant": {
-    "dataSource": "test-datasource",
-    "public": true
-  },
   "Review": {
     "dataSource": "mongoDs",
     "public": true
@@ -54,5 +46,121 @@
   "CoffeeShop": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Product": {
+    "dataSource": "checkinby",
+    "public": true
+  },
+  "Desire": {
+    "dataSource": "checkinby",
+    "public": true
+  },
+  "ProductWO": {
+    "dataSource": "checknby-document",
+    "public": true
+  },
+  "VariationAttributeValue": {
+    "dataSource": "db",
+    "public": false
+  },
+  "VariationAttribute": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ImageGroupWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ImageWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "TestModel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ProductLink": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "Store": {
+    "dataSource": "checkinby",
+    "public": true
+  },
+  "StoreGroup": {
+    "dataSource": "checkinby",
+    "public": true
+  },
+  "BundledProductWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "InventoryWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "MasterWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "OptionWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "OptionValueWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductPromotionWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "RecommendationWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "RecommendationTypeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductTypeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariantWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationAttributeWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationAttributeValueWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "VariationGroupWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductLinkWO": {
+    "dataSource": "checknby-document",
+    "public": false
+  },
+  "ProductPriceModel": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "ProductPriceInfo": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "PriceBook": {
+    "dataSource": "checkinby",
+    "public": false
+  },
+  "ProductPriceTable": {
+    "dataSource": "checkinby",
+    "public": false
   }
 }
